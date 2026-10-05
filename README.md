@@ -4,7 +4,7 @@ Next.js app for sending SMS through [Africa's Talking](https://africastalking.co
 
 ## Setup
 
-1. Copy `.env.example` to `.env.local`.
+1. Copy `.env.example` to `.env.local` for local development. On Vercel, set the same names as project environment variables.
 2. Set `AT_API_KEY`. Sandbox apps always use `AT_USERNAME=sandbox`.
 3. Run `npm run dev` and open [http://localhost:3000](http://localhost:3000).
 

@@ -30,7 +30,7 @@ export function getSmsClient() {
 
   if (!configured) {
     throw new Error(
-      "Set AT_API_KEY and AT_USERNAME in .env.local, then restart the dev server.",
+      "Set AT_API_KEY and AT_USERNAME, then redeploy.",
     );
   }
 

@@ -164,9 +164,10 @@ export function SmsConsole({ origin }: { origin: string }) {
 
       {config && !config.configured ? (
         <section className="rounded-2xl border border-line bg-card px-5 py-4 text-sm leading-6 text-ink">
-          Copy <code className="font-mono">.env.example</code> to{" "}
-          <code className="font-mono">.env.local</code>, add your API key, and restart{" "}
-          <code className="font-mono">npm run dev</code>. Sandbox apps always use the username{" "}
+          Add <code className="font-mono">AT_API_KEY</code> and{" "}
+          <code className="font-mono">AT_USERNAME</code>, then restart. Locally those go in{" "}
+          <code className="font-mono">.env.local</code>. On Vercel, add them as environment
+          variables and redeploy. Sandbox apps always use the username{" "}
           <code className="font-mono">sandbox</code>.
         </section>
       ) : null}
